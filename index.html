@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/532043a30d.js" crossorigin="anonymous"></script> 
+    <script src="scripts.js"></script>
+</head>
+<body> 
+    <nav>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
+            <li><i class="fa-solid fa-circle-info"></i><a href="#about">About</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#contact">Contacts</a></li>
+            <li class="dropdown">
+                <i class="fa-solid fa-gear"></i><a href="#services">Services</a>
+                <ul class="dropdown-content">
+                        <li><a href="laptops.html" target="_blank">Laptops</a></li>
+                        <li><a href="phones.html" target="_blank">Phones</a></li>
+                        <li><a href="equipment.html" target="_blank">Computer Equipment</a></li>                  
+                </ul>
+            </li>
+            <li>
+                <i class="fa-solid fa-moon"></i>
+                <button onclick="darkmode()">Dark Mode</button>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div class="flex-container">
+        <div> 
+            <header> Apple MacBook Air (2024) </header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8Oe43Zme3n9RnMWs1S77mcZA-CxMkyc8Xg&s" alt="Dators">
+            <button type="button" class="learn-more" onclick="openModal('Macbook Details', 'M3 chip with 8-core CPU and 10-core GPU 8GB 512GB SSD')">Learn More</button>
+        </div>
+        <div> 
+            <header> Apple iPhone 16 </header> 
+            <img src="https://www.istudio.store/cdn/shop/files/iPhone_16_Pink_PDP_Image_Position_1a_Pink_Color__TH-TH_a0a5036d-ecf3-4216-a250-4f8739521d21.jpg?v=1725929916" alt="Viedtālrunis">
+            <button type="button" class="learn-more" onclick="openModal('iPhone Details', 'A18 Chip, 128 GB, Camera Control, powerful upgrades to the advanced camera system, the Action button')">Learn More</button>
+        </div>
+        <div> 
+            <header> Apple Studio Display </header>
+            <img src="https://www.euronics.lv/UserFiles/Products/Images/315147-474636-medium.png" alt="Monitors">
+            <button type="button" class="learn-more" onclick="openModal('Monitor Details', 'Display size 27 inch, 5120-by-2880 resolution at 218 pixels per inch 600 nits brightness')">Learn More</button>    
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+</body>
+<footer> 
+    <p>© 2024. All rights reserved.</p>
+</footer>
+</html>
