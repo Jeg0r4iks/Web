@@ -1,0 +1,13 @@
+.calculator {
+    width: 200px;
+    height: 300px;
+}
+
+.btn-yellow {
+    background-color: yellow;
+}
+
+.btn-green {
+    background-color: greenyellow;
+}
+
